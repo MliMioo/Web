@@ -12,36 +12,58 @@
 
     <body>
         <h2>Register</h2>
-        <p>Please Put In </p>
-        <form action="/action_page.php">
-            <label for="fname">Full name:</label><br>
+        <p>Please fill in this form to create account </p>
+        <form action="/action_page.php" target="_blank">
+            <label for="fname">Full name: *</label><br>
             <input type="text" id="fname" name="fname" placeholder="Input your Full name" required> <br>
             
-            <label for="usname">User name:</label><br>
-            <input type="text" id="usname" name="usname" placeholder="Input your User name"required> <br>
+            <label for="username">User name: *</label><br>
+            <input type="text" id="usname" name="username" placeholder="Input your User name"required> <br>
             
-            <label for="pass">Password:</label><br>
+            <label for="pass">Password: *</label><br>
             <input type="password" id="pwd" name="Password" placeholder="Input your Password"required><br>
 
-            <label for="Email">Email:</label><br>
+            <label for="Email">Email: *</label><br>
             <input type="email" id="Email" name="Email" placeholder="Input your Email"required><br>
     
-            <label for="Telephone">Telephone number:</label><br>
-            <input type="text" id="usname" name="usname" placeholder="Input your phone number"required><br>
+            <label for="Telephone">Telephone number: *</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" maxlength="10" placeholder="Input your phone number"required><br><br>
             
+            <label for="Input Object">Input Object: </label><br>
+
+            <label for="Student">Student</label>
+            <input type="radio" id="student" name="Object" value="Student" checked>
+
+            <label for="Teacher">Teacher</label>
+            <input type="radio" id="Teacher" name="Object" value="Teacher"><br><br>
+
+            <label for="Favorite">Favorite: </label><br>
+            <input type="checkbox" id="Badminton" name="Badminton" value="Badminton" checked>
+            <label for="Badminton"> Badminton</label>
+            
+            <input type="checkbox" id="Volleyball" name="Volleyball" value="Volleyball" >
+            <label for="Volleyball"> Volleyball</label>
+
+            <input type="checkbox" id="Football" name="Football" value="Football">
+            <label for="Football"> Football</label><br><br>
+
             <label for="Adress">Address:</label><br>
             <select type="adress" id="adress" name="adress" required>
                 <option value="TP.HCM">TPHCM</option>
                 <option value="Quang Binh">Quang Binh</option>
                 <option value="Ha Noi">Hanoi</option>
                 <option value="Quang Nam">Quang Nam</option>
-
             </select>   
                 <br>
+            
+            <label for="Birthday">Birthday:</label><br>
+            <input type="date" id="Birthday" name="Birthday" min="2000-01-02" required><br>
+
 
             <label for="Yrpic">Your picture:</label><br>
-            <input type="file"/><br>
-            <input type="submit" value="Dang Ky"/>
+            <input type="file" id="Your picture" name="Your picture" required><br>
+            <br>
+            <input type="submit" value="Đăng Ký"/>
           </form> 
     </body>
 
